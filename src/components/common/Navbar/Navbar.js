@@ -61,7 +61,7 @@ class Navbar extends Component {
       <Nav {...this.props}>
         <StyledContainer>
           <Brand>
-            <a href={'#'}>bsurd</a>
+            <a href={'/#'}>bsurd</a>
           </Brand>
           <Mobile>
             <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
