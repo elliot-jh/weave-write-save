@@ -67,3 +67,11 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# dotenv environment variables files
+.env
+.env.development
+.env.production
+
+# VSCode Workspace
+aaa.code-workspace
