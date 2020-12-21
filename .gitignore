@@ -75,5 +75,7 @@ yarn-error.log
 
 # VSCode Workspace
 aaa.code-workspace
+
+#ESLint & Prettier
 .eslintrc.js
 .prettierrc
