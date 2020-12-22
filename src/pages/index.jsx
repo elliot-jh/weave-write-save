@@ -5,12 +5,13 @@ import Layout from '@common/Layout';
 import Navbar from '@common/Navbar';
 import SEO from '@common/SEO';
 
-import Header from '@sections/Header';
-import About from '@sections/About';
-import Brands from '@sections/Brands';
-import Team from '@sections/Team';
-import Faq from '@sections/Faq';
-import Footer from '@sections/Footer';
+import Header from '@sections/Header.jsx';
+import About from '@sections/About.jsx';
+import Brands from '@sections/Brands.jsx';
+import Team from '@sections/Team.jsx';
+import Faq from '@sections/Faq.jsx';
+import Booking from '@sections/Booking.jsx';
+import Footer from '@sections/Footer.jsx';
 
 const IndexPage = () => (
   <Layout>
@@ -21,6 +22,7 @@ const IndexPage = () => (
     <Brands />
     <Team />
     <Faq />
+    <Booking />
     <Footer />
   </Layout>
 );
