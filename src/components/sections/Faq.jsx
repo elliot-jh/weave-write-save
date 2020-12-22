@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react';
 
 import { Section, Container } from '@components/global';
@@ -43,7 +44,7 @@ const FAQS = [
     content: () => (
       <>
         Do not build a website with last decade’s tech. The future of the web is
-        mobile, JavaScript and APIs—the{` `}
+        mobile, JavaScript and APIs—the{' '}
         <ExternalLink href="https://jamstack.org/">JAMstack</ExternalLink>.
         Every website is a web app and every web app is a website. Gatsby.js is
         the universal JavaScript framework you’ve been waiting for.

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
@@ -41,8 +42,8 @@ const Footer = () => (
         }
       }
     `}
-    render={data => (
-      <React.Fragment>
+    render={(data) => (
+      <>
         <Art>
           <Img
             fluid={data.art_pot.childImageSharp.fluid}
@@ -55,7 +56,7 @@ const Footer = () => (
               <h2>Absurd</h2>
               <span>
                 Illustrations by
-                {` `}
+                {' '}
                 <ExternalLink href="https://twitter.com/diana_valeanu">
                   @diana_valeanu
                 </ExternalLink>
@@ -70,7 +71,7 @@ const Footer = () => (
             </SocialIcons>
           </StyledContainer>
         </FooterWrapper>
-      </React.Fragment>
+      </>
     )}
   />
 );
@@ -84,20 +85,20 @@ const SocialIcons = styled.div`
     height: 24px;
   }
 
-  @media (max-width: ${props => props.theme.screen.sm}) {
+  @media (max-width: ${(props) => props.theme.screen.sm}) {
     margin-top: 40px;
   }
 `;
 
 const FooterWrapper = styled.footer`
-  background-color: ${props => props.theme.color.primary};
+  background-color: ${(props) => props.theme.color.primary};
   padding: 32px 0;
 `;
 
 const Copyright = styled.div`
-  font-family: ${props => props.theme.font.secondary};
-  ${props => props.theme.font_size.small};
-  color: ${props => props.theme.color.black.regular};
+  font-family: ${(props) => props.theme.font.secondary};
+  ${(props) => props.theme.font_size.small};
+  color: ${(props) => props.theme.color.black.regular};
 
   a {
     text-decoration: none;
@@ -117,7 +118,7 @@ const StyledContainer = styled(Container)`
   justify-content: space-between;
   align-items: center;
 
-  @media (max-width: ${props => props.theme.screen.sm}) {
+  @media (max-width: ${(props) => props.theme.screen.sm}) {
     flex-direction: column;
     text-align: center;
   }
