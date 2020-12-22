@@ -7,6 +7,7 @@
   "dependencies": {
     "@stripe/stripe-js": "^1.11.0",
     "@svgr/webpack": "^4.1.0",
+    "axios": "^0.21.1",
     "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^2.29.1",
     "gatsby-image": "^2.0.20",
@@ -28,7 +29,8 @@
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
     "react-scrollspy": "^3.3.5",
-    "styled-components": "^4.1.3"
+    "styled-components": "^4.1.3",
+    "unsplash-js": "^7.0.2"
   },
   "keywords": [
     "gatsby"
