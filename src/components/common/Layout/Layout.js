@@ -9,6 +9,10 @@ import SEO from '@common/SEO';
 import theme from '@styles/theme';
 import GlobalStyles from '@styles/GlobalStyles';
 
+if (typeof window === 'undefined') {
+	global.window = {}
+};
+
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <>
