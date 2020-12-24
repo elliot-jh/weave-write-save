@@ -1,5 +1,4 @@
 const path = require('path');
-
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
@@ -15,6 +14,7 @@ module.exports = {
         downloadFiles: true,
       },
     },
+
     {
       resolve: 'gatsby-plugin-svgr',
       options: {
@@ -57,7 +57,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
-        fonts: ['average', 'prata\:400,700'],
+        fonts: ['average', 'prata:400,700'],
       },
     },
     {

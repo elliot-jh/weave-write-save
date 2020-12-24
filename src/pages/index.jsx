@@ -15,6 +15,7 @@ import Footer from '@sections/Footer.jsx';
 
 const IndexPage = () => (
   <Layout>
+    <head><script src="https://identity.netlify.com/v1/netlify-identity-widget.js" /></head>
     <SEO />
     <Navbar />
     <Header />
