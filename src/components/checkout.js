@@ -1,3 +1,5 @@
+/* eslint-disable react/button-has-type */
+/* eslint-disable react/jsx-filename-extension */
 import React, { useState } from 'react';
 import getStripe from '../utils/stripejs';
 
@@ -28,8 +30,8 @@ const Checkout = () => {
     const { error } = await stripe.redirectToCheckout({
       mode: 'payment',
       lineItems: [{ price: 'price_1I0PdEEe4dnHfM55dVMzmOQe', quantity: 1 }],
-      successUrl: 'http://localhost:8000/',
-      cancelUrl: 'http://localhost:8000/404',
+      successUrl: '/success',
+      cancelUrl: '/404',
     });
 
     if (error) {
